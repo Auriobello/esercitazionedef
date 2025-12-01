@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Compito 5 potenza"/>
+        <attribute name="authors" value="UTENTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 07:31:07 PM"/>
+        <attribute name="created" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwNTowMzoyNyAiOzI2NTQ="/>
+        <attribute name="edited" value="VVRFTlRFO0RFU0tUT1AtOUc4MUk2OTsyMDI1LTEyLTAxOyIwNToxMzoxNiAiOzE7Mjc2MQ=="/>
+        <attribute name="edited" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTItMDE7MDc6MzE6MDcgUE07MTsyOTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, e, sum, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserire la base&quot;" newline="True"/>
+            <comment text="grave errore, con i numeri negativi fa robe a caso"/>
+            <input variable="b"/>
+            <assign variable="sum" expression="b"/>
+            <output expression="&quot;Inserire l'esponente&quot;" newline="True"/>
+            <input variable="e"/>
+            <for variable="i" start="2" end="e" direction="inc" step="1">
+                <assign variable="sum" expression="sum*b"/>
+            </for>
+            <output expression="&quot;La potenza di &quot; &amp; b &amp; &quot; alla &quot; &amp; e &amp; &quot; &#232; &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
